@@ -1,0 +1,254 @@
+Done — I replaced the photo with the one from:
+
+`C:\Users\lucas\Pictures\Screenshots\Screenshot 2026-06-18 192715.png`
+
+Use this full code:
+
+```html
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Lucas Cui</title>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #60a5fa;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 950px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    header {
+      padding: 40px 0 20px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+      align-items: center;
+    }
+
+    .profile-photo {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--accent);
+    }
+
+    h1 {
+      font-size: 42px;
+      margin: 0;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      margin-top: 10px;
+      font-size: 18px;
+    }
+
+    nav {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    nav a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      margin-top: 40px;
+      background: var(--card);
+      padding: 22px;
+      border-radius: 12px;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 24px;
+      border-bottom: 1px solid #1f2937;
+      padding-bottom: 8px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .card {
+      padding: 15px;
+      border: 1px solid #1f2937;
+      border-radius: 10px;
+    }
+
+    .card h3 {
+      margin: 0 0 6px;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    footer {
+      text-align: center;
+      margin: 45px 0 20px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (min-width: 700px) {
+      header {
+        grid-template-columns: auto 1fr;
+      }
+
+      .grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <img class="profile-photo" src="assets/profile-photo.png" alt="Lucas Cui">
+
+      <div>
+        <h1>Lucas Cui</h1>
+        <p class="subtitle">Computer Science Student - Aspiring Software Engineer - Builder</p>
+
+        <nav>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#blog">Blog</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <section id="about">
+      <h2>About Me</h2>
+
+      <p>
+        I am a Computer Science student passionate about building software, solving problems,
+        and continuously improving my technical skills. I enjoy working on both frontend and backend
+        development, and I am actively exploring areas such as web development, algorithms, and system design.
+      </p>
+
+      <p>
+        I have experience working on academic and personal programming projects, where I have built
+        applications that involve <strong>[your technologies here]</strong> and applied concepts such as
+        data structures, APIs, and responsive web design.
+      </p>
+
+      <p>
+        I am currently focused on improving my portfolio to prepare for internships and opportunities
+        at tech companies. I value clean code, practical problem solving, and building projects that are
+        both useful and well-designed.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Project One</h3>
+          <p class="muted">[Replace with project description: what it does, technologies used, and impact]</p>
+        </div>
+
+        <div class="card">
+          <h3>Project Two</h3>
+          <p class="muted">[Replace with project description]</p>
+        </div>
+
+        <div class="card">
+          <h3>Project Three</h3>
+          <p class="muted">[Replace with project description]</p>
+        </div>
+
+        <div class="card">
+          <h3>Project Four</h3>
+          <p class="muted">[Replace with project description]</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog">
+      <h2>Blog</h2>
+
+      <div class="grid">
+        <div class="card">
+          <h3>My Journey in Computer Science</h3>
+          <p class="muted">A short reflection on what I am learning, what I am building, and how I am growing as a developer.</p>
+        </div>
+
+        <div class="card">
+          <h3>What I Learned from Building Projects</h3>
+          <p class="muted">Notes about problem solving, clean code, debugging, and improving one project at a time.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+
+      <p>
+        HTML - CSS - Python - Java - Git - Problem Solving - Data Structures - Algorithms - Web Development
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+
+      <p><strong>Name:</strong> {your name}</p>
+      <p><strong>Email:</strong> {your email}</p>
+      <p><strong>Phone:</strong> {your phone number}</p>
+
+      <p class="muted">
+        Feel free to reach out for internship opportunities, collaboration, or questions about my work.
+      </p>
+    </section>
+
+    <footer>
+      Copyright 2026 Lucas Cui - Built with pure HTML & CSS
+    </footer>
+  </div>
+</body>
+</html>
+```
